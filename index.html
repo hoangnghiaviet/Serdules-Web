@@ -1,119 +1,213 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Serdules</title>
-        <link rel="stylesheet" href="./assets/css/style.css">
-        <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
-    </head>
 
-    <body>
-        <div id="main">
-            <header id="header">
-                <nav class="links" style="--items: 5;">
-                    <a href="#"><img src="./assets/img/header/serdules_logo.png" height="80px" alt="" style="position: absolute; top: 5px; left: 20px;"></a>
-                    <a class="menu" href="#">TRANG CHỦ</a>
-                    <a class="menu" href="#about">VỀ CHÚNG TÔI</a>
-                    <a class="menu" href="#function">TÍNH NĂNG</a>
-                    <a class="menu" href="#contact">LIÊN HỆ</a>
-                    <span class="line"></span>
-                </nav>
-            </header>
+<head>
+    <meta charset="UTF-8">
+    <title>Serdules</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
 
-            <div id="slider">
-
+<body>
+    <div id="main">
+        <header id="header">
+            <div id="logo">
+                <div></div>
+                <div>Giải pháp tối ưu hóa thời gian</div>
             </div>
+            <nav class="links" style="--items: 4;">
+                <a class="menu" href="#">Trang chủ</a>
+                <a class="menu" href="#about">Về chúng tôi</a>
+                <a class="menu" href="#function">Tính năng</a>
+                <a class="menu" href="#contact">Liên hệ</a>
+                <span class="line"></span>
+            </nav>
+            <div id="authen_con">
+                <div id="sign_up"> Đăng Nhập</div>
+                <div id="sign_in"> Đăng Kí</div>
+            </div>
+        </header>
+        <div class="slider">
+        </div>
 
-            <div id="content">
-                <div id="about" class="content-section">
-                    <h2 class="heading-section">SERDULES FOR BUSINESS</h2>
-                </div>
-
-                <div id="function" class="content-section">
-                    <h2 class="heading-section">TÍNH NĂNG</h2>
-                    <div class="row">
-                        <div class="content-col left">
-                            <h3>CALENDAR</h3>
-                            <p>Kiểm soát các cuộc hẹn với khác hàng, lên lịch hàng tuần cho cả team, kèm theo các lưu ý chi tiết</p>
-                        </div>
-                        <div class="icon-col">
-                            <img src="/assets/img/content/function1.png" alt="calendar" width="100%">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="icon-col" style="float: right">
-                            <img src="/assets/img/content/function2.png" alt="calendar" width="100%">
-                        </div>
-                        <div class="content-col right">
-                            <h3>Dữ liệu khách hàng</h3>
-                            <p>Tên khách hàng, phương thức liên hệ, dòng doanh thu, đánh giá và các yếu tố khác từ tệp khách hàng của bạn sẽ luôn được thống kê và cập nhật</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="content-col left">
-                            <h3>Thông báo và nhắc nhở</h3>
-                            <p>SERDULES sẽ hỗ trợ gửi email và tin nhắn SMS để bạn được thông báo về cuộc hẹn với khách hàng kèm theo những thông tin về yêu cầu của khách hàng đó</p>
-                        </div>
-                        <div class="icon-col">
-                            <img src="/assets/img/content/function3.png" alt="calendar" width="100%">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="icon-col" style="float: right">
-                            <img src="/assets/img/content/function4.png" alt="calendar" width="100%">
-                        </div>
-                        <div class="content-col right">
-                            <h3>Phương thức thanh toán</h3>
-                            <p>Hỗ trợ thu phí một phần trước cuộc hẹn, giảm thiểu tình trạng hủy hẹn của khách hàng tùy theo yêu cầu của chủ tiệm</p>
+        <div id="slide_view" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#slide_view" data-slide-to="0" class="active"></li>
+                <li data-target="#slide_view" data-slide-to="1"></li>
+                <li data-target="#slide_views" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div id="slide_card">
+                        <div class="mockup"></div>
+                        <div class="context">
+                            <div class="title">Đăng kí để hiện diện trên nền tảng của chúng tôi</div>
+                            <div class="text">
+                                Giải pháp kiến tạo khách hàng trung thành trên Loyalty App và ứng dụng mạng xã hội
+                                Giải pháp kiến tạo khách hàng trung thành trên Loyalty App và ứng dụng mạng xã hội
+                                Giải pháp kiến tạo khách hàng trung thành trên Loyalty App và ứng dụng mạng xã hội.
+                            </div>
+                            <div class="guest_buttton ">Đăng Kí Tư Vấn</div>
+                            <div class="guest_buttton dung_thu_btn">Dùng Thử Miễn Phí</div>
                         </div>
                     </div>
                 </div>
-
-                <div id="contact" class="content-section">
-                    <h2 class="heading-section">LIÊN HỆ</h2>
-                    <div class="row">
-                        <div class="col col-half contact-info">
-                            <p><i class="ti-location-pin"></i>Địa chỉ: 669 QL1A, khu phố 3, Thủ Đức, TP. Hồ Chí Minh</p>
-                            <p><i class="ti-mobile"></i>Hotline: 0339804405 (Mr. Nhân)</p>
-                            <p><i class="ti-email"></i>Email: serdules.business@gmail.com</p>
+                <div class="carousel-item">
+                    <div id="slide_card">
+                        <div class="mockup"></div>
+                        <div class="context">
+                            <div class="title">Đăng kí để hiện diện trên nền tảng của chúng tôi</div>
+                            <div class="text">
+                                Triển khai ngay chương trình tích luỹ điểm, đổi điểm sang ưu đãi, giữ chân khách cũ, thu
+                                hút khách hàng mới, tăng gấp đôi doanh số cùng CNV Loyalty.
+                                Triển khai ngay chương trình tích luỹ điểm, đổi điểm sang ưu đãi, giữ chân khách cũ, thu
+                                hút khách hàng mới, tăng gấp đôi doanh số cùng CNV Loyalty.
+                            </div>
+                            <div class="guest_buttton ">Đăng Kí Tư Vấn</div>
+                            <div class="guest_buttton dung_thu_btn">Dùng Thử Miễn Phí</div>
                         </div>
-                        <div class="col col-half contact-info customer-info">
-                            <p>Vui lòng điền thông tin liên hệ theo mẫu dưới, chúng tôi sẽ sớm liên hệ khi nhận được liên hệ từ Khách hàng.</p>
-                            <form action="">
-                                <div class="row">
-                                    <div class="col col-single">
-                                        <input type="text" name="" placeholder="Họ và tên (*)" required id="" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col col-single">
-                                        <input type="text" name="" placeholder="Số điện thoại (*)" required id="" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col col-single">
-                                        <input type="email" name="" placeholder="Email (*)" id="" required class="form-control">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col col-single">
-                                        <textarea name="" id = "" rows="6" class="form-control" placeholder="Ghi chú"></textarea>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col col-single">
-                                        <input type="submit" value="GỬI LIÊN HỆ" id="submit">
-                                    </div>
-                                </div>
-                            </form>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div id="slide_card">
+                        <div class="mockup"></div>
+                        <div class="context">
+                            <div class="title">Đăng kí để hiện diện trên nền tảng của chúng tôi</div>
+                            <div class="text">
+                                Giải pháp kiến tạo khách hàng trung thành trên Loyalty App và ứng dụng mạng xã hội
+                                Giải pháp kiến tạo khách hàng trung thành trên Loyalty App và ứng dụng mạng xã hội
+                                Giải pháp kiến tạo khách hàng trung thành trên Loyalty App và ứng dụng mạng xã hội.
+                            </div>
+                            <div class="guest_buttton ">Đăng Kí Tư Vấn</div>
+                            <div class="guest_buttton dung_thu_btn">Dùng Thử Miễn Phí</div>
                         </div>
                     </div>
                 </div>
             </div>
+            <a class="carousel-control-prev" href="#slide_view" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#slide_view" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
 
-            <div id="footer">
+        <div id="content">
+            <div id="function" class="content-section">
+                <h2 class="heading-section">TÍNH NĂNG</h2>
+                <div class="row">
+                    <div class="content-col left">
+                        <h3>CALENDAR</h3>
+                        <p>Kiểm soát các cuộc hẹn với khác hàng, lên lịch hàng tuần cho cả team, kèm theo các lưu ý chi
+                            tiết</p>
+                    </div>
+                    <div class="icon-col">
+                        <img src="/assets/img/content/function1.png" alt="calendar" width="100%">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="icon-col" style="float: right">
+                        <img src="/assets/img/content/function2.png" alt="calendar" width="100%">
+                    </div>
+                    <div class="content-col right">
+                        <h3>Dữ liệu khách hàng</h3>
+                        <p>Tên khách hàng, phương thức liên hệ, dòng doanh thu, đánh giá và các yếu tố khác từ tệp khách
+                            hàng của bạn sẽ luôn được thống kê và cập nhật</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="content-col left">
+                        <h3>Thông báo và nhắc nhở</h3>
+                        <p>SERDULES sẽ hỗ trợ gửi email và tin nhắn SMS để bạn được thông báo về cuộc hẹn với khách hàng
+                            kèm theo những thông tin về yêu cầu của khách hàng đó</p>
+                    </div>
+                    <div class="icon-col">
+                        <img src="/assets/img/content/function3.png" alt="calendar" width="100%">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="icon-col" style="float: right">
+                        <img src="/assets/img/content/function4.png" alt="calendar" width="100%">
+                    </div>
+                    <div class="content-col right">
+                        <h3>Phương thức thanh toán</h3>
+                        <p>Hỗ trợ thu phí một phần trước cuộc hẹn, giảm thiểu tình trạng hủy hẹn của khách hàng tùy theo
+                            yêu cầu của chủ tiệm</p>
+                    </div>
+                </div>
+            </div>
 
+            <div id="contact" class="content-section">
+                <h2 class="heading-section">LIÊN HỆ</h2>
+                <div class="row">
+                    <div class="col col-half contact-info">
+                        <p><i class="ti-location-pin"></i>Địa chỉ: 669 QL1A, khu phố 3, Thủ Đức, TP. Hồ Chí Minh</p>
+                        <p><i class="ti-mobile"></i>Hotline: 0339804405 (Mr. Nhân)</p>
+                        <p><i class="ti-email"></i>Email: serdules.business@gmail.com</p>
+                    </div>
+                    <div class="col col-half contact-info customer-info">
+                        <p>Vui lòng điền thông tin liên hệ theo mẫu dưới, chúng tôi sẽ sớm liên hệ khi nhận được liên hệ
+                            từ Khách hàng.</p>
+                        <form action="">
+                            <div class="row">
+                                <div class="col col-single">
+                                    <input type="text" name="" placeholder="Họ và tên (*)" required id=""
+                                        class="form-control">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col col-single">
+                                    <input type="text" name="" placeholder="Số điện thoại (*)" required id=""
+                                        class="form-control">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col col-single">
+                                    <input type="email" name="" placeholder="Email (*)" id="" required
+                                        class="form-control">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col col-single">
+                                    <textarea name="" id="" rows="6" class="form-control"
+                                        placeholder="Ghi chú"></textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col col-single">
+                                    <input type="submit" value="GỬI LIÊN HỆ" id="submit">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
-    </body>
+        <div id="footer">
+        </div>
+    </div>
+    <!--Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!--Page-->
+    <script src="./index.js"></script>
+</body>
+
 </html>

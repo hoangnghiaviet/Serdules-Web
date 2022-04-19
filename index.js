@@ -1,0 +1,1 @@
+setInterval(() => $('.carousel').carousel('next'), 3000)
