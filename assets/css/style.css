@@ -33,10 +33,11 @@ body #header {
 	display: flex;
 	flex-direction: row;
 	width: 100%;
-	background-color: rgba(255, 255, 255, 0.5);
+	background-color: #feeef4;
 	height: 90px;
 	align-items: center;
 	justify-content: space-between;
+	box-shadow: 0px 0px 6px 1px #FF1E64;
 }
 
 .content {
@@ -311,6 +312,7 @@ body #header {
 	font-size: 15px;
 	user-select: none;
 	transition-duration: 0.3s;
+	white-space: nowrap;
 }
 
 #sign_up:hover {
@@ -330,6 +332,7 @@ body #header {
 	border-radius: 80px;
 	user-select: none;
 	transition-duration: 0.3s;
+	white-space: nowrap;
 }
 
 #sign_in:hover {
@@ -414,4 +417,12 @@ body #header {
 .carousel-control-prev,
 .carousel-control-next {
 	width: 5% !important;
+}
+
+.animate_slide_fra {
+	height: 450px;
+	width: 450px;
+	position: absolute;
+	right: 30px;
+	bottom: 10px;
 }
