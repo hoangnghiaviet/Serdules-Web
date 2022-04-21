@@ -31,8 +31,8 @@
                 <span class="line"></span>
             </nav>
             <div id="authen_con">
-                <div id="sign_up"> Đăng Nhập</div>
-                <div id="sign_in"> Đăng Kí</div>
+                <button id="sign_in" class="btn js-sign-in">Đăng Nhập</button>
+                <button id="sign_up" class="btn js-sign-up">Đăng Kí</button>
             </div>
         </header>
         <div class="slider">
@@ -152,9 +152,9 @@
                 <h2 class="heading-section">LIÊN HỆ</h2>
                 <div class="row">
                     <div class="col col-half contact-info">
-                        <p><i class="ti-location-pin"></i>Địa chỉ: 669 QL1A, khu phố 3, Thủ Đức, TP. Hồ Chí Minh</p>
-                        <p><i class="ti-mobile"></i>Hotline: 0339804405 (Mr. Nhân)</p>
-                        <p><i class="ti-email"></i>Email: serdules.business@gmail.com</p>
+                        <p>Địa chỉ: 669 QL1A, khu phố 3, Thủ Đức, TP.Hồ Chí Minh</p>
+                        <p>Hotline: 0339804405 (Mr. Nhân)</p>
+                        <p>Email: serdules.business@gmail.com</p>
                     </div>
                     <div class="col col-half contact-info customer-info">
                         <p>Vui lòng điền thông tin liên hệ theo mẫu dưới, chúng tôi sẽ sớm liên hệ khi nhận được liên hệ
@@ -197,6 +197,32 @@
         <div id="footer">
         </div>
     </div>
+
+    <div id="modal" class="">
+        <div class="main js-modal-main">
+            <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">  	
+            <input type="checkbox" id="chk" aria-hidden="true">
+    
+                <div class="signup">
+                    <form>
+                        <label for="chk" aria-hidden="true">Đăng Kí</label>
+                        <input type="text" name="txt" placeholder="User name" required="">
+                        <input type="email" name="email" placeholder="Email" required="">
+                        <input type="password" name="pswd" placeholder="Password" required="">
+                        <button>Đăng Kí</button>
+                    </form>
+                </div>
+    
+                <div class="login">
+                    <form>
+                        <label for="chk" aria-hidden="true">Đăng Nhập</label>
+                        <input type="email" name="email" placeholder="Email" required="">
+                        <input type="password" name="pswd" placeholder="Password" required="">
+                        <button>Đăng Nhập</button>
+                    </form>
+                </div>
+        </div>
+    </div>
     <!--Bootstrap-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -211,6 +237,28 @@
     <script src="./assets/js/lottie.js"></script>
     <!--Page-->
     <script src="./index.js"></script>
+
+    <script>
+        const SignInBtn = document.querySelector('.js-sign-in')
+        const modal = document.querySelector('#modal')
+        const modalmain = document.querySelector('.js-modal-main')
+        
+        function showSigIn() {
+            modal.classList.toggle('open')
+
+        }
+
+        function closeSigIn() {
+            modal.classList.remove('open')
+        }
+
+        SignInBtn.addEventListener('click', showSigIn)
+
+        modal.addEventListener('click', closeSigIn)
+        modalmain.addEventListener('click', function(event) {
+            event.stopPropagation()
+        })
+    </script>
 </body>
 
 </html>
